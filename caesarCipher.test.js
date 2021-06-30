@@ -1,5 +1,13 @@
-const caeserCipher = require('./caeserCipher')
+const caesarCipher = require('./caesarCipher')
 
-test('it can multiply two numbers', () => {
-  expect(caeserCipher('hello', 2)).toBe(10)
+test('it can encrypt a message with options', () => {
+  expect(caesarCipher('hello', 2)).toBe('jgmmn')
+})
+
+test('it can decrypt messages', () => {
+  expect(caesarCipher('ejgxcm', -2)).toBe('cheval')
+})
+
+test('it can work past the end of the alphabet', () => {
+  expect(caesarCipher('zebra', 2)).toBe('bgdtc')
 })

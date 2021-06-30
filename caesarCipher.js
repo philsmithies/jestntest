@@ -1,6 +1,10 @@
-function caeserCipher(string, option) {
+function caesarCipher(string, option) {
   this.alphabet = 'abcdefghijklomnopqrstuvwxyz'.split('')
-  return this.alphabet[0]
+  const newArr = []
+  string.split('').forEach((element, index) => {
+    newArr.push(this.alphabet[this.alphabet.indexOf(element) + option])
+  });
+  return newArr.join('')
 }
 
-module.exports = caeserCipher;
+module.exports = caesarCipher;
