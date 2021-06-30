@@ -11,3 +11,7 @@ test('it can decrypt messages', () => {
 test('it can work past the end of the alphabet', () => {
   expect(caesarCipher('zebra', 2)).toBe('bgdtc')
 })
+
+test('it can work with punctuation', () => {
+  expect(caesarCipher('hello, world', 2)).toBe('jgmmn yntmf')
+})
