@@ -1,4 +1,3 @@
-const { TestWatcher } = require('jest')
 const capitalize = require('./capitalize')
 
 test('it capitalizes the first letter', () => {
