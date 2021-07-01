@@ -1,9 +1,10 @@
 {
   "devDependencies": {
+    "eslint": "^7.29.0",
     "jest": "^27.0.6"
   },
   "scripts": {
     "test": "jest",
-    "watch": "jest --watch *.js" 
+    "watch": "jest --watch *.js"
   }
 }
