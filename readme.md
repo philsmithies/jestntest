@@ -18,6 +18,11 @@ Install Yarn if you don't have it already:
 npm install --global yarn
 ```
 
+Run Yarn to initialize
+```
+yarn
+```
+
 Run Tests
 ```
 yarn test
