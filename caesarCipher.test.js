@@ -13,5 +13,9 @@ test('it can work past the end of the alphabet', () => {
 })
 
 test('it can work with punctuation', () => {
-  expect(caesarCipher('hello, world', 2)).toBe('jgmmn yntmf')
+  expect(caesarCipher('hello, world', 2)).toBe('jgmmn, yntmf')
 })
+
+// reg ex?
+
+// lower case
