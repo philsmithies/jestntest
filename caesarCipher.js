@@ -12,7 +12,6 @@ function caesarCipher(string, option) {
       newArr.push(this.alphabet[this.alphabet.indexOf(element) + option])
     }
   });
-
   return newArr.join('')
 }
 
